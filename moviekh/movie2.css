@@ -1,0 +1,22 @@
+*{
+    background-color: rgb(232, 221, 221);
+}
+#dataTable{
+    border: 3px solid ;
+    margin-top: 20PX ;
+    width: 30%;
+    margin-right: 200PX;
+    background-color: white;
+} 
+th ,td{
+background-color: white;
+    border: 3px solid;
+    padding: 8px;
+}
+th{
+    background-color: pink;
+}
+button{
+    background-color: darkgray;
+    color: black;
+}

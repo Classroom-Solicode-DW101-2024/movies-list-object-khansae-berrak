@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie2.css">
+</head>
+<body>
+   
+    <button type="button" onclick="showAddForm()">Add Movie</button>
+    <button type="button" onclick="showMovies()">Show Movies</button>
+
+    
+    <input type="text" id="Search" placeholder="Title of movie" />
+    <button id="searchButton">Search</button>
+
+   
+    <table id="moviesTable" style="display:none">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Rating</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="movieTable"></tbody>
+    </table>
+
+   
+    <form id="formmovie" style="display:none;">
+        <h2>Title:</h2> <input type="text" id="title" placeholder="Title" required>
+        <h2>Description:</h2> <input type="text" id="description" placeholder="Description" required>
+        <h2>Date:</h2> <input type="date" id="date" required>
+        <h2>Rating:</h2> <input type="number" id="rating" placeholder="Rating" min="0" max="5" step="0.1" required>
+        <button type="button" onclick="addMovie()">Add Movie</button>
+    </form>
+
+    <script src="movie.JS"></script>
+</body>
+</html>
